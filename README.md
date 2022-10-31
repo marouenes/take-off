@@ -1,17 +1,19 @@
-# Technical Documentation for the Software Ecosystem of the Product
+# Technical Documentation - Software Ecosystem Design
 
 ## Table of Contents
 
 - [Introduction](#introduction)
+  - [Product Overview](#product-overview)
 - [Problem Statement](#problem-statement)
-- [Goals](#solution)
-- [Architecture](#architecture)
+- [Solution](#solution)
+  - [Functional Requirements](#functional-requirements)
+  - [Non-Functional Requirements](#non-functional-requirements)
+- [Architectural Decisions](#architectural-decisions)
 - [Software Components](#software-components)
 - [System Requirements](#system-requirements)
-- [System Design](#system-design)
 - [Timeline](#timeline)
-- [Development](#development)
-- [Deployment](#deployment)
+- [Development Workflow](#development-workflow)
+- [Deployment Diagrams](#deployment-diagrams)
 - [Testing](#testing)
 - [Release Notes](#release-notes)
 - [Contributing](#contributing)
@@ -19,6 +21,8 @@
 - [License](#license)
 
 ## Introduction
+
+### Product Overview
 
 This repository contains the technical documentation for the software ecosystem of the product.
 
@@ -28,17 +32,21 @@ The problem statement is to create a software ecosystem for the product.
 
 ## Solution
 
+### Product Objectives
+
 The solution is to create a software ecosystem for the product.
 
-## Architecture
+#### Functional Requirements
 
-The software ecosystem of the product is composed of the following components:
+- [ ] Create a software ecosystem for the product.
 
-- [Frontend](https://www.github.com/marouane-skandaji/frontend)
-- [Backend](https://www.github.com/marouane-skandaji/backend)
-- [Database](https://www.github.com/marouane-skandaji/database)
-- [API](https://www.github.com/marouane-skandaji/api)
-- [Data Pipeline](https://www.github.com/marouane-skandaji/data-pipeline)
+#### Non-Functional Requirements
+
+- [ ] The software ecosystem should be easy to use.
+
+## Architectural decisions
+
+The architectural decisions are to create a software ecosystem for the product.
 
 ## Software Components
 
@@ -51,21 +59,17 @@ The software ecosystem of the product is composed of the following components:
 
 ## System Requirements
 
-The software ecosystem of the product is composed of the following components:
-
-## System Design
-
-The software ecosystem of the product is composed of the following components:
+The system requirements for the software ecosystem of the product are:
 
 ## Timeline
 
 The software ecosystem of the product is composed of the following components:
 
-## Development
+## Development workflow
 
 The software ecosystem of the product is composed of the following components:
 
-## Deployment
+## Deployment Diagrams
 
 The software ecosystem of the product is composed of the following components:
 
@@ -83,7 +87,8 @@ The software ecosystem of the product is composed of the following components:
 
 ## References
 
-The software ecosystem of the product is composed of the following components:
+- [Software Ecosystem Design](https://www.youtube.com/watch?v=0fKg7e37bQE)
+- [Technical Documentation](https://www.youtube.com/watch?v=0fKg7e37bQE)
 
 ## License
 
