@@ -1,0 +1,100 @@
+@startuml uml2
+
+title Data Model - Entity Relationship Diagram
+
+!define primary_key(x) <b><color:#b8861b><&key></color> x</b>
+!define foreign_key(x) <color:#aaaaaa><&key></color> x
+!define column(x) <color:#efefef><&media-record></color> x
+!define table(x) entity x << (T, white) >>
+
+table( Categories ) {
+  primary_key( categoryID ): INT
+  column( CategoryName ): VARCHAR
+}
+
+table( Companies ) {
+  primary_key( CompanyId ): INT
+  column( CompanyName ): VARCHAR
+  column( NumberOfEmployees ): INT
+  column( FieldId ): INT
+  column( PackageId ): INT
+  column( ContactId ): INT
+}
+
+table( Contacts ) {
+  primary_key( ContactId ): INT
+  column( Email ): VARCHAR
+  column( PhoneNumber ): VARCHAR
+  column( Address ): VARCHAR
+  column( Website ): VARCHAR
+  column( OwnerId ): INT
+}
+
+table( Fields ) {
+  primary_key( FieldId ): INT
+  column( FieldName ): VARCHAR
+}
+
+table( Goals ) {
+  primary_key( GoalId ): INT
+  column( GoalName ): VARCHAR
+  column( IsCompleted ): BOOLEAN
+  column( CreatedAt ): DATE
+  column( FinishedAt ): DATE
+  column( Deadline ): DATE
+  column( MilestoneId ): INT
+}
+
+table( Milestones ) {
+  primary_key( MilestoneId ): INT
+  column( MilestoneName ): VARCHAR
+  column( CompanyId ): INT
+  column( categoryId ): INT
+}
+
+table( Packages ) {
+  primary_key( PackageId ): INT
+  column( PackageName ): VARCHAR
+  column( Price ): INT
+  column( Description ): VARCHAR
+}
+
+table( Products ) {
+  primary_key( ProductId ): INT
+  column( ProductName ): VARCHAR
+  column( Description ): VARCHAR
+  column( Price ): INT
+  column( CompanyId ): INT
+  column( CategoryId ): INT
+}
+
+table( Reports ) {
+  primary_key( ReportId ): INT
+  column( ReportTitle ): VARCHAR
+  column( Content ): VARCHAR
+  column( IssuedAt ): DATE
+  column( CompanyId ): INT
+}
+
+table( Users ) {
+  primary_key( UserId ): INT
+  column( FirstName ): VARCHAR
+  column( LastName ): VARCHAR
+  column( Email ): VARCHAR
+  column( Position ): VARCHAR
+  column( CompanyId ): VARCHAR
+}
+
+Products }|--|| Categories
+Milestones }|--|| Categories
+Goals }o--|| Milestones
+Milestones }|--|| Companies
+Products }o--|| Companies
+Reports }o--|| Companies
+Companies ||--|| Contacts
+Companies ||--|| Packages
+Companies ||--|| Users
+Companies }o--o{ Fields
+
+
+@enduml
