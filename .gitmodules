@@ -1,9 +1,9 @@
 [submodule "open-data-platform"]
-	path = open-data-platform
+	path = take-off-data-platform
 	url = https://github.com:marouenes/open-data-platform.git
 [submodule "TakeoffAPI"]
-	path = TakeoffAPI
+	path = Take-off-api
 	url = https://github.com:BenAyedMehdi/TakeoffAPI.git
 [submodule "TakeOff-Client"]
-	path = TakeOff-Client
+	path = take-off-client
 	url = https://github.com:BenAyedMehdi/TakeOff-Client.git
