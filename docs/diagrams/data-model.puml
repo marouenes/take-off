@@ -82,7 +82,7 @@ table( Users ) {
   column( LastName ): VARCHAR
   column( Email ): VARCHAR
   column( Position ): VARCHAR
-  column( CompanyId ): VARCHAR
+  column( CompanyId ): INT
 }
 
 Products }|--|| Categories
