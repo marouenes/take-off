@@ -1,0 +1,86 @@
+@startuml uml2
+
+title Data Flow Diagram for the system interfaces
+
+skinparam componentStyle uml2
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist
+!includeurl AWSPuml/AWSCommon.puml
+!includeurl AWSPuml/Storage/SimpleStorageServiceS3Standard.puml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/release/2-1/dist/AzureCommon.puml
+
+
+' git icons
+!include <logos/git>
+!include <logos/github>
+!include <logos/airflow>
+!include <logos/aws-s3>
+!include <logos/azure>
+!include <logos/spark>
+
+' create a pipeline workflow
+left to right direction
+skinparam wrapWidth 400
+
+rectangle "<$git>" as git
+
+component "Github Actions" as actions
+
+package "Airflow Environment" {
+  component "<$airflow>" as airflow
+  ' the environment variables loaded from the airflow secrets
+  node "Airflow Connections" {
+    component "AZURE_STORAGE_ACCOUNT" as azure_storage_account
+    component "AZURE_STORAGE_KEY" as azure_storage_key
+    component "AZURE_STORAGE_CONNECTION_STRING" as azure_storage_connection_string
+  }
+
+}
+
+' create the connection to the azure storage account
+azure_storage_account -[#blue,dashed]-> azure_storage_key
+azure_storage_account -[#blue,dashed]-> azure_storage_connection_string
+
+' create the connection to the azure storage account from airflow
+azure_storage_account -[#green]-> airflow
+
+
+package "Spark Application" {
+  component "<$spark>" as spark
+  note right of spark
+    batch processing the data,\n
+    write to transaction logs\n
+    and repartition the data
+  end note
+}
+
+database "<$azure>" as mssql_db
+  note right: refresh and load the tables in Azure MS SQL DB
+
+interface "React Client - Take Off" as react_client
+actor "End User" as user
+' interface for the application deployment
+interface "Deployed Application" as deployed_app
+deployed_app -[#green]-> azure_storage_account
+
+' the client application frontend is hosted on azure storage
+react_client -(0)- deployed_app
+deployed_app -> user
+
+airflow -down-> spark
+spark -down-> mssql_db
+mssql_db -down-> react_client
+
+git --> actions : Commit/PR/Merge Request ...
+actions --(0 spark : Run unit and integration test
+actions --(0 airflow : Update the DAG bag
+' add a note to the workflow diagram to explain the process
+note right of actions
+  The Github Actions will trigger the Airflow DAGs
+  to run the Spark Application
+end note
+airflow --> spark : trigger spark application
+airflow --> mssql_db : prepare fresh integration environment data
+spark --> mssql_db : Process transactional data
+
+@enduml
