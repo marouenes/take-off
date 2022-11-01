@@ -4,3 +4,6 @@
 [submodule "TakeOff-Client"]
 	path = TakeOff-Client
 	url = https://github.com:BenAyedMehdi/TakeOff-Client.git
+[submodule "TakeOff-API"]
+	path = TakeOff-API
+	url = https://github.com:BenAyedMehdi/TakeOff-API.git
