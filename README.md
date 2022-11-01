@@ -53,10 +53,11 @@ The architectural decisions and background explain the decisions that were made 
 
 The software ecosystem of the product is composed of the following components:
 
-- [Frontend](https://www.github.com/marouane-skandaji/frontend)
+- [Frontend](https://github.com/BenAyedMehdi/TakeOff-Client)
 - [Backend](https://www.github.com/marouane-skandaji/backend)
+- [Spark Application](https://github.com/marouenes/odp-take-off)
 - [Database](https://www.github.com/marouane-skandaji/database)
-- [API](https://www.github.com/marouane-skandaji/api)
+- [API](https://findyourwayapi.azurewebsites.net/index.html)
 
 ## System Requirements
 
