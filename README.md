@@ -1,4 +1,4 @@
-# Technical Documentation - Software Ecosystem Design
+# SWAD - Software Architecture Document
 
 ## Table of Contents
 
@@ -8,7 +8,7 @@
 - [Solution](#solution)
   - [Functional Requirements](#functional-requirements)
   - [Non-Functional Requirements](#non-functional-requirements)
-- [Architectural Decisions](#architectural-decisions)
+- [Architectural Decisions and Background](#architectural-decisions-and-background)
 - [Software Components](#software-components)
 - [System Requirements](#system-requirements)
 - [Timeline](#timeline)
@@ -44,7 +44,7 @@ The solution is to create a software ecosystem for the product.
 
 - [ ] The software ecosystem should be easy to use.
 
-## Architectural decisions
+## Architectural decisions and background
 
 The architectural decisions are to create a software ecosystem for the product.
 
