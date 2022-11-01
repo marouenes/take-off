@@ -94,8 +94,8 @@ Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information
 
 ## References
 
-- [Software Architecture Document](https://en.wikipedia.org/wiki/Software_architecture_document)
-- [Software Architecture Document Template](docs/pdf/SWAD.pdf)
+- [Software Design](https://en.wikipedia.org/wiki/Software_architecture_document)
+- [Software Architecture Document](docs/pdf/SWAD.pdf)
 
 ## License
 
