@@ -1,4 +1,4 @@
-# SWAD - Software Architecture Document
+# Take Off (c) by The Take Off Team - 2022
 
 ## Table of Contents
 
@@ -13,8 +13,7 @@
 - [System Requirements](#system-requirements)
 - [Timeline](#timeline)
 - [Development Workflow](#development-workflow)
-- [Deployment Diagrams](#deployment-diagrams)
-- [Testing](#testing)
+- [Context Diagrams](#context-diagrams)
 - [Release Notes](#release-notes)
 - [Contributing](#contributing)
 - [References](#references)
@@ -24,29 +23,31 @@
 
 ### Product Overview
 
-This repository contains the technical documentation for the software ecosystem of the product.
+This repository contains the an overview of the product and the development process.
 
 ## Problem Statement
 
-The problem statement is to create a software ecosystem for the product.
+The problem statement explain the constraints that provided the significant influence over the architecture.
 
 ## Solution
 
 ### Product Objectives
 
-The solution is to create a software ecosystem for the product.
+The objective key results (OKRs) of the product.
 
 #### Functional Requirements
 
-- [ ] Create a software ecosystem for the product.
+- [ ] FR1: The system shall be able to ...
+- [ ] FR2: The system shall be able to ...
 
 #### Non-Functional Requirements
 
 - [ ] The software ecosystem should be easy to use.
+- [ ] The software ecosystem should be easy to maintain.
 
 ## Architectural decisions and background
 
-The architectural decisions are to create a software ecosystem for the product.
+The architectural decisions and background explain the decisions that were made during the development process.
 
 ## Software Components
 
@@ -59,37 +60,43 @@ The software ecosystem of the product is composed of the following components:
 
 ## System Requirements
 
-The system requirements for the software ecosystem of the product are:
+This section describes the general function and purpose for the system or subsystem whose architecture is described in this SWAD.
 
 ## Timeline
 
-The software ecosystem of the product is composed of the following components:
+The timeline of the project. The timeline is a list of the major milestones and the dates they are expected to be completed.
 
 ## Development workflow
 
-The software ecosystem of the product is composed of the following components:
+The development workflow describes the development process of the product. The development process is composed of the following steps:
 
-## Deployment Diagrams
+- [ ] Step 1: ...
+- [ ] Step 2: ...
+- [ ] Step 3: ...
 
-The software ecosystem of the product is composed of the following components:
+## Context Diagrams
 
-## Testing
+This section describes the goals and major contextual factors for the software architecture.
 
-The software ecosystem of the product is composed of the following components:
+The section includes a description of the role software architecture plays in the life cycle, the relationship to system engineering results and artifacts, and any other relevant factors.
 
 ## Release Notes
 
-The software ecosystem of the product is composed of the following components:
+The release notes describe the changes made in each release. The release notes are composed of the following sections:
+
+- [ ] Release 1.0.0
+  - [ ] FR1: The system shall be able to ...
+  - [ ] FR2: The system shall be able to ...
 
 ## Contributing
 
-The software ecosystem of the product is composed of the following components:
+Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information.
 
 ## References
 
-- [Software Ecosystem Design](https://www.youtube.com/watch?v=0fKg7e37bQE)
-- [Technical Documentation](https://www.youtube.com/watch?v=0fKg7e37bQE)
+- [Software Architecture Document](https://en.wikipedia.org/wiki/Software_architecture_document)
+- [Software Architecture Document Template](docs/pdf/SWAD.pdf)
 
 ## License
 
-MIT License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
