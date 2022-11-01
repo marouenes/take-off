@@ -25,6 +25,8 @@
 
 This repository contains the an overview of the product and the development process.
 
+Here is the initial mockup of the desktop application: [Desktop Application Mockup](https://shorturl.at/BGX89)
+
 ## Problem Statement
 
 The problem statement explain the constraints that provided the significant influence over the architecture.
