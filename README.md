@@ -1,4 +1,14 @@
-# TakeOff (c) by The Take Off Team - 2022
+<!-- centering the heading and badges -->
+<h1 align="center">TakeOff © by The Take Off Team - 2022</h1>
+
+<h2 align="center">
+
+![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)
+[![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](https://github.com/marouenes/take-off/blob/main/CONTRIBUTING.md)
+![Size](https://img.shields.io/github/repo-size/marouenes/take-off?style=flat-square)
+![Version](https://img.shields.io/github/v/release/marouenes/take-off?include_prereleases&style=flat-square)
+
+</h2>
 
 ## Table of Contents
 
